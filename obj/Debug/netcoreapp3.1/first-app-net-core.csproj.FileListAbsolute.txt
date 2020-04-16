@@ -49,3 +49,4 @@ C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.cs
 C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.dll
 C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.pdb
 C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.genruntimeconfig.cache
+C:\xampp\htdocs\first-app-net-core\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
