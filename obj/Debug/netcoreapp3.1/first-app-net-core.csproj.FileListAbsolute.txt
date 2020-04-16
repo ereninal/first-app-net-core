@@ -50,3 +50,6 @@ C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.dl
 C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.pdb
 C:\xampp\htdocs\first-app-net-core\obj\Debug\netcoreapp3.1\first-app-net-core.genruntimeconfig.cache
 C:\xampp\htdocs\first-app-net-core\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\xampp\htdocs\first-app-net-core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\xampp\htdocs\first-app-net-core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\xampp\htdocs\first-app-net-core\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll

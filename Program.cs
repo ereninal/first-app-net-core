@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace first_app_net_core
 {
@@ -8,11 +10,15 @@ namespace first_app_net_core
     {
         public DbSet<Product> Products {get; set;}
         public DbSet<Category> Categories { get; set; }
-
+        public static readonly ILoggerFactory MyLoggerFactory
+            = LoggerFactory.Create(builder => { builder.AddConsole(); });
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=Shop.db");
+            optionsBuilder
+                .UseSqlite("Data Source=Shop.db")
+                .UseLoggerFactory(MyLoggerFactory); 
         }
+
     }
     public class Product
     {
@@ -36,9 +42,18 @@ namespace first_app_net_core
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            AddProducts();
             
+        }
+        static void AddProducts()
+        {
+            using(var db = new ShopContext())
+            {
+                var products = new Product{Name = "Apple X", Price=13000};
+                db.Products.Add(products);
+                db.SaveChanges();
+                Console.WriteLine("Veriler Eklendi.");
+            }
         }
     }
 }
